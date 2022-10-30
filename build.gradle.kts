@@ -38,6 +38,9 @@ allprojects {
     dependencies {
 //    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
         compileOnly("org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT")
+        compileOnly("org.spigotmc:spigot:1.18.2-R0.1-SNAPSHOT")
+        compileOnly("com.mojang:authlib:1.5.21")
+        compileOnly("org.json:json:20220924")
 
     }
 

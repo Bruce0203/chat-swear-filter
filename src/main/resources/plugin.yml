@@ -1,0 +1,9 @@
+name: chat-swear-filter
+main: io.github.bruce0203.chatswearfilter.Plugin
+version: $version
+api-version: 1.18
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.6.10
+  - org.jetbrains.kotlin:kotlin-reflect:1.6.10
+  - org.jetbrains.kotlin:kotlin-test:1.6.10
+  - org.json:json:20220924
