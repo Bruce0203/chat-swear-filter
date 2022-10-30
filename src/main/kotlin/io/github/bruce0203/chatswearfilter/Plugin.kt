@@ -35,7 +35,7 @@ class Plugin : JavaPlugin(), Listener {
             Bukkit.getScheduler().runTask(this) { _ ->
                 val format = config.getString("format")
                 if (format === null)
-                    throw AssertionError("config.yml 에 format 없습니다!!")
+                    throw AssertionError("config.yml 에 format 없습니다")
                 event.player.kickPlayer(format.replace("{chat}", input))
             }
         }
