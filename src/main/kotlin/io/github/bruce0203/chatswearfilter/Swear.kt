@@ -25,6 +25,7 @@ class Swear(val file: File, val map: HashMap<List<String>, List<String>> = readF
 
     fun findSwear(input: String): Boolean {
         val input = input.replace("_", "")
+            .replace(Regex("\\d"), "")
         val allMatches: ArrayList<String> = ArrayList()
         map.forEach { (words, excludes) ->
             words.forEach { word ->
